@@ -1,0 +1,735 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add black overlay with 50% opacity */
+    z-index: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.logo span {
+    color: #FF5733;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar ul li a.signup {
+    background-color: #FF5733;
+    border-radius: 5px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content .btn {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Responsive styles */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu-btn .close-menu {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+.containerr {
+    width: 90%;
+    margin: 4rem auto;
+    
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.highlight {
+    color: #f04e30; /* Midabka la iftiiminayo */
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.programs {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+   gap :10px;
+}
+
+.program {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 80%;
+    transition: transform 0.3s ease;
+}
+
+.program:hover {
+    transform: translateY(-5px);
+}
+
+.program-icon {
+    width: 100px;
+    height: 100px;
+    padding: 2rem;
+    color: white;
+}
+
+.program-content {
+    flex: 1;
+}
+
+.program-content h3 {
+ margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.program-content p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.discover-link {
+    color: #f04e30;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discover-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* clssses */
+
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+
+}
+
+.highlight {
+    color: #f04e30; /* Midabka la iftiiminayo */
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.classes-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.classes-list {
+    width: 45%;
+}
+
+.class-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.c
+.class-item:hover {
+    transform: translateY(-5px);
+}
+
+.class-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.class-title {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.class-details {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.class-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.class-description {
+    margin: 10px 0;
+    color: #777;
+}
+.class-btn{
+
+    width: 100%;
+    padding: 1rem 1rem;
+    color: white;
+    background-color: rgb(223, 84, 84);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+
+}
+.class-sdule{
+
+    padding: 1rem 1rem;
+    color: white;
+    background-color: rgb(223, 84, 84);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+
+/* cta */
+
+
+.cta{
+    background-image: url("cta-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.cta .cta-title {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cta .cta-text {
+
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+.cta .btn {
+    padding: 10px 20px;
+    background-color: #FF5733;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* tariner card */
+
+.trainers-section {
+    margin-top: 50px;
+}
+
+.trainers-wrapper {
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: repeat(3 , 1fr);
+ 
+    gap: 60px;
+   
+}
+
+.trainer-card {
+  
+    padding: 3rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.trainer-card:hover {
+    transform: translateY(-5px);
+}
+
+.trainer-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.trainer-info {
+    padding: 15px;
+}
+
+.trainer-role {
+    display: block;
+    color: #f04e30;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.trainer-name {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.trainer-description {
+    color: #777;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.trainer-socials {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trainer-socials a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.trainer-socials a:hover {
+    color: #f04e30;
+}
+/* Responsive Styles */
+
+.mapform-flex{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+.map{
+    width: 50%;
+}
+.map iframe{
+    width: 100%;
+    height: 90vh;
+}
+.form{
+    background: linear-gradient(rgba(56, 55, 55, 0.3), rgba(80, 80, 80, 0.3)), url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg') center/cover no-repeat;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 3rem; */
+}
+form{
+    width: 38.6875rem;
+    background-color: #FFFFFF;
+    padding: 3rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 2rem;
+}
+form input, textarea{
+    padding: 15px;
+    width: 100%;
+}
+form input:focus{
+    border: 0.5px solid #232d39;
+}
+form textarea{
+    padding: 10px;
+    font-family: "inter", sans-serif;
+}
+form button{
+    border: none;
+    /* border-radius: 8px; */
+    padding: 12px 20px;
+    background-color: #ED563b;
+    color: #FFFFFF;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+form .user-email{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+form .user-email input{
+    width: 100%;
+}
+
+
+
+.classSchadule{
+    background: linear-gradient(rgba(56, 55, 55, 0.3), rgba(80, 80, 80, 0.3)), url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg') center/cover no-repeat;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    /* justify-content: center; */
+}
+.schadule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.schadule h2{
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.schadule h2 span{
+    color: #ED563b;
+}
+.schadule p{
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+.week-days{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #FFFFFF;
+    margin-block: 4rem;
+}
+.week-days #Monday{
+    color: #ED563b;
+}
+table {
+    width: 100%;
+    /* margin: 0 auto; */
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+}
+
+thead th {
+    color: white;
+    padding: 2.5rem 3.125rem;
+    text-align: center;
+}
+
+tbody td {
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 2.5rem 3.125rem;
+}
+
+.th-1 {
+    border-left: none;
+}
+
+.td-4 {
+    border-right: none;
+}
+
+.b-left {
+    border-inline: none;
+}
+
+
+footer{
+    font-size:2rem;
+    text-align:  center;
+} 
+@media(max-width: 768px){
+    .menu-btn {
+        display: block;
+    }
+
+    .content {
+        display: none;
+    }
+    .menu-btn  {
+        color: white;
+        font-size: 2rem;
+    }
+    .menu-btn[data-visible="true"] .close-menu {
+        display: block;
+    }
+
+    .menu-btn[data-visible="true"] .open-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar[data-visible="true"] {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        z-index: 9999;
+        top: 3.5rem;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 3.5rem);
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .navbar[data-visible="true"] .nav-links {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+
+    }
+
+    /* chose program resposive */
+
+    .programs {
+        grid-template-columns: 1fr;
+    }
+
+    .program {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        justify-content: center;
+        margin-left: 2rem;
+    }
+
+    .program-icon {
+        margin-bottom: 10px;
+    }
+
+    .program-content h3 {
+
+        font-size: 1.5em;
+
+    }
+
+    .program-content p {
+        font-size: 1em;
+        
+    }
+
+    .classes-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .class-btn {
+        width: 70%;
+        margin-left: 10px;
+    }
+
+    .classes-list, .class-details {
+        width: 100%
+
+    }
+
+    /* tariners */
+    .trainers-wrapper {
+        grid-template-columns: 1fr;
+
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        width: 100%;
+
+    }
+
+    .trainer-card  {
+       padding: 1rem;
+       width: 70%;
+       margin-left: 1rem;
+
+    }
+    .trainer-card img {
+        width: 100%;
+    }
+   
+
+    table{
+        width: 100%;
+    
+    }
+    thead th,
+    tbody td{
+        padding: 1px;
+    }
+    .user-email{
+        flex-direction: column;
+    }
+    .user-email input{
+        width: 100%;
+    }
+    .map,.form{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+        padding: 1rem;
+    }
+    footer{
+        font-size: 0.65rem;
+    }
+}
+
+
+
+
+/* clssess */
